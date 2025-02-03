@@ -11,5 +11,6 @@ if __name__ == "__main__":
     trg_vocab_size = 10
     model = Transformer(src_vocab_size, trg_vocab_size, src_pad_idx, trg_pad_idx).to(device)
     out = model(x, trg[:, :-1])
-    print(out.shape)
+    print(out.shape) 
+    # torch.Size([2, 7, 10])     
     
